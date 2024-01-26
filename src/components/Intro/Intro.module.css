@@ -148,3 +148,13 @@
   cursor: pointer;
   transform: scale(1.25);
 }
+
+.github {
+  margin-top: 8px;
+  max-width: 110px
+}
+
+.github:hover{
+  cursor: pointer;
+  transform: scale(1.25);
+}
