@@ -150,8 +150,9 @@
 }
 
 .github {
-  margin-top: 8px;
-  max-width: 110px
+  margin-top: 23px;
+  max-width: 110px;
+  border-radius: 7px;
 }
 
 .github:hover{
