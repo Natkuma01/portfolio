@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import styles from "./Intro.module.css";
 import { getImageUrl } from "../../utils";
 
-export const Intro = () => {
+function Intro() {
   return (
     <section className={styles.container}>
         <div className={styles.content}>
@@ -11,13 +11,11 @@ export const Intro = () => {
           <p className={styles.description}>I'm a full-stack developer based in New York</p>
           <button className={styles.button34}><a href="mailto:natkuma@outlook.com">Contact Me</a>
           </button>
-          <a href="https://github.com/Natkuma01?tab=repositories">
-            <imag src={getImageUrl("Intro/git.png")} className={styles.linked} />
-          </a>
-          <a href="https://www.linkedin.com/in/natalie-chan-shimin/">
+
+          <a href="https://www.linkedin.com/in/natalie-chan-shimin/" target="_blank">
           <img src={getImageUrl("Intro/linkedin.png")} className={styles.linkedin} />
           </a>
-          <a href="https://github.com/Natkuma01?tab=repositories">
+          <a href="https://github.com/Natkuma01?tab=repositories" target="_blank">
             <img src={getImageUrl("Intro/git.png")} className={styles.github} />
           </a>
         </div>
@@ -27,3 +25,4 @@ export const Intro = () => {
 
   );
 };
+export default Intro

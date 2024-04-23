@@ -10,7 +10,7 @@ import cssAnimation from "../../../assets/skill/css.json";
 import "./skill.css";
 
 
-export const Skill = () => {
+function Skill() {
   return (
     <section id="skills">
       
@@ -30,3 +30,5 @@ export const Skill = () => {
     </section>
   )
 };
+
+export default Skill

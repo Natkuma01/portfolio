@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 
-export const About = () => {
+function About() {
   return (
   <section id="about">
     <div className="space">
@@ -28,3 +28,4 @@ export const About = () => {
   </section>
   )
 }
+export default About

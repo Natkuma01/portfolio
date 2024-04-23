@@ -51,8 +51,9 @@
   }
 
 .introPic{
-    width: 50%;
+    width: 36%;
     z-index: 1;
+    border-radius: 30px;
   
     animation-name: floating;
     animation-duration: 3s;
