@@ -1,4 +1,6 @@
 import React from 'react';
+import Lottie from "lottie-react";
+import pointerRight from "../../../assets/project/pointerRight.json";
 
 import { getImageUrl } from "../../utils";
 import { Link } from "react-router-dom"
@@ -79,8 +81,12 @@ function Project() {
       </p>
     </div>
     <div>
+    
+    <Lottie className="pointer" animationData={pointerRight}/>
       <Link to="miniProject">
-      <p className="text-violet-200 text-4xl text-right px-28 underline hover:decoration-sky-500"> More Mini Projects</p>
+      <p 
+      className="text-violet-200 text-4xl text-left px-28 underline hover:decoration-sky-500 ">
+      More Mini Projects</p>
       </Link>
     </div>
     </section>

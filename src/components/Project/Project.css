@@ -25,6 +25,12 @@
     border: 2px solid white;
 }
 
+.pointer {
+  max-height: 20px;
+  max-width: 85px;
+  margin-left: 20px;
+}
+
 
 
 
