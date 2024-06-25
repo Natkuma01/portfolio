@@ -1,8 +1,22 @@
-# React + Vite
+# Natalie's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Overview
 
-Currently, two official plugins are available:
+This app was created to showcase my skills and experience in software engineering. It highlights my technical projects and demonstrates my ability to develop applications
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
+- Short introduction about myself
+- Showcase Full-stacks projects and mini-projects with React Vite
+- Contact info, Linkedin profile and Github profile
+- Programming languages and framework I used in previous projects
+
+# Run The Project
+1. cd into the project directory
+2. run npm install
+3. run npm run dev
+
+# Dev Dependencies
+
+- React Vite
+- React-router-dom
+- TailwindCSS
