@@ -172,7 +172,7 @@ const Projects = () => {
               </p>
               <div className="card-actions justify-end">
                 <a
-                  href="https://github.com/Natkuma01/Scrumptious"
+                  href="https://natkuma.pythonanywhere.com/recipes/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
