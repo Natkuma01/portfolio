@@ -1,11 +1,11 @@
-import { Navbar } from "./components/Navbar/Navbar";
-import Intro  from "./components/Intro/Intro";
-import About from "./components/About/About";
-import Project from "./components/Project/Project";
-import Skill from "./components/Skill/Skill";
-import MiniProject from "./components/miniProject/miniProject"
+import Navbar from "./components/Navbar";
+import Intro  from "./components/Intro";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skill from "./components/Skill";
+import MiniProject from "./components/MiniProject"
+import Contact from "./components/Contact"
 import { Routes, Route } from "react-router-dom"
-import "./App.css"
 
 
 
@@ -13,17 +13,18 @@ import "./App.css"
 function App() {
 
   return (
-  <Routes>  
-       
-    <Route path="/portfolio" element={<>
+    <div className='bg-primary'>
     <Navbar />
-    <Intro />
-    <About />
-    <Project />
-    <Skill />
-    </>} />
-    <Route path="/portfolio/miniProject" element={<MiniProject />} />
-    </Routes>
+  <Routes>  
+    <Route path="/portfolio" element={<Intro />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/projects" element={<Projects />} />
+    <Route path="/mini" element={<MiniProject />} />
+    <Route path="/skill" element={<Skill />} />
+    <Route path="/contact" element={<Contact />} />
+
+   </Routes>
+    </div>
   )
 }
 
