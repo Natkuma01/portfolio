@@ -14,14 +14,14 @@ const About = () => {
         </div>
         <div className="flex-1 mt-16 lg:mt-0 lg:ml-16">
           <p className="text-3xl text-gray-700 font-extrabold text-center mb-5">
-            Hi, there
+            Hi there,
           </p>
           <p className="text-base text-gray-700 mb-4">
             I am dedicated to crafting efficient and user-friendly applications
             that solve real-world problems. Through my experience from Hack
             Reactor, I have gained expertise in various programming languages,
             frameworks, and technologies. From front-end development using HTML,
-            CSS, React to back-end development with Python, JavaScript and SQL.
+            CSS, and React to back-end development with Python, JavaScript and SQL,
             I have a diverse skill set that allows me to tackle complex projects
             from end to end.
           </p>
