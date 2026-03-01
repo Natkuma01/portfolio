@@ -9,9 +9,17 @@ import sushi from "../../assets/project/sushi.png";
 import figma from "../../assets/project/figma.png";
 import stopwatch from "../../assets/project/stopwatch.png";
 import ProjectCard from "./ProjectCard";
+import wine from "../../assets/project/wine.png";
 
 const Projects = () => {
   const projectData = [
+    {
+      image: wine,
+      title: "Wine Inventory Tracker",
+      description: "Wine Inventory helps users track their wine bottles and calculate the most optimal selling price.  (**Please contact me for credential)",
+      badges: ["React", "DaisyUI", "TailwindCSS", "Django", "AWS"],
+      link: "http://wine-inventory.duckdns.org/",
+    },
     {
       image: hungry,
       title: "Hungry Rabbit",
