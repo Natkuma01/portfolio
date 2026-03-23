@@ -16,7 +16,7 @@ const Projects = () => {
     {
       image: wine,
       title: "Wine Inventory Tracker",
-      description: "Wine Inventory helps users track their wine bottles and calculate the most optimal selling price.  (**Please contact me for credential)",
+      description: "Wine Inventory helps users track their wine bottles and calculate the most optimal selling price. Demo Access: Username: natkuma Password: jebon171",
       badges: ["React", "DaisyUI", "TailwindCSS", "Django", "AWS"],
       link: "http://wine-inventory.duckdns.org/",
     },
