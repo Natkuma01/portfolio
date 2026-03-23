@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { myHistory } from '../data/bio'; // Adjust path if needed
 
 const Chatbot = () => {
   const [input, setInput] = useState('');
@@ -24,7 +23,7 @@ const Chatbot = () => {
 
     try {
       // Replace with your actual Vercel URL
-      const response = await fetch('https://YOUR_VERCEL_APP_URL/api/chat', {
+      const response = await fetch('https://portfolio-h4jcv7pxn4-2644s-projects.vercel.app/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: input }),
