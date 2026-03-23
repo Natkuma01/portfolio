@@ -43,9 +43,9 @@ const Chatbot = () => {
       {/* Header */}
       <div className="bg-gradient-to-r from-pink-400 to-purple-500 p-4 text-white">
         <h3 className="font-bold text-lg flex items-center gap-2">
-          <span>✨</span> Natalie's AI Bestie
+          <span>✨</span> Hi! I'm Natalie!
         </h3>
-        <p className="text-xs opacity-80">Online & ready to chat!</p>
+        <p className="text-xs opacity-80">Ready to chat ~</p>
       </div>
 
       {/* Message Area */}

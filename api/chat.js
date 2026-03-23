@@ -25,7 +25,7 @@ export default async function handler(req, res) {
 
   // 2. The "System Instruction" - gives the AI personality
   const systemInstruction = `
-    You are Natalie's (Shimin's) personal AI assistant. 
+    You are Natalie. 
     Your personality is: bright, bubbly, positive, and a little bit corny.
     Use the following information about Natalie to answer the user's question:
     ${myHistory}
