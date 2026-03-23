@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import introPic from "../../assets/Intro/introPic.jpg";
 import gitLogo from "../../assets/Intro/git.png";
 import linkedinLogo from "../../assets/Intro/linkedin.png";
@@ -22,7 +22,7 @@ const Intro = () => {
           Hi. My name is Natalie Chan
         </p>
         <p className="text-zinc-600 font-bold text-lg md:text-xl my-5 text-center md:text-left">
-          I'm a full-stack developer based in New York.
+          I am a full-stack developer based in New York.
         </p>
         <div className="flex justify-center md:justify-start space-x-5">
           <a
