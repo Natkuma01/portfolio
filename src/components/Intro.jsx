@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import introPic from "../../assets/Intro/introPic.jpg";
 import gitLogo from "../../assets/Intro/git.png";
 import linkedinLogo from "../../assets/Intro/linkedin.png";
+import Chatbot from "./Chatbot";
 
 const Intro = () => {
+  const [chatOpen, setChatOpen] = useState(false);
+
   return (
+    <>
     <div className="flex flex-col md:flex-row p-6 md:p-24">
       <div className="flex-1">
         <img
@@ -46,6 +50,25 @@ const Intro = () => {
         </div>
       </div>
     </div>
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+      {chatOpen && <Chatbot />}
+      <button
+        onClick={() => setChatOpen((prev) => !prev)}
+        className="bg-pink-500 hover:bg-pink-600 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-colors"
+        aria-label="Toggle chat"
+      >
+        {chatOpen ? (
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        ) : (
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M2 5a2 2 0 012-2h16a2 2 0 012 2v11a2 2 0 01-2 2H7l-5 4V5z" />
+          </svg>
+        )}
+      </button>
+    </div>
+    </>
   );
 };
 export default Intro;
