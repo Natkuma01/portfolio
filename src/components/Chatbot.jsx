@@ -22,7 +22,7 @@ const Chatbot = () => {
     setIsLoading(true);
 
     try {
-      // Replace with your actual Vercel URL
+      
       const response = await fetch('https://portfolio-h4jcv7pxn4-2644s-projects.vercel.app/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -43,7 +43,7 @@ const Chatbot = () => {
       {/* Header */}
       <div className="bg-gradient-to-r from-pink-400 to-purple-500 p-4 text-white">
         <h3 className="font-bold text-lg flex items-center gap-2">
-          <span>✨</span> Hi! I'm Natalie!
+          <span>✨</span> <p>chatbot in progress 🔧</p>
         </h3>
         <p className="text-xs opacity-80">Ready to chat ~</p>
       </div>
