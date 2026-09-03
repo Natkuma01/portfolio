@@ -16,12 +16,22 @@ const About = () => {
             I build for people, not just for code.
           </p>
           <div className="lg:flex lg:flex-1 lg:items-center lg:-translate-y-8">
-            <p className="text-base text-gray-700 mb-4 lg:mb-0">
-              You probably went through 1000 resumes before you saw mine. Why not
-              spend 5 minutes getting to know me in person and see if I am the
-              one you are looking for? If not, that&rsquo;s okay. I hope you do not
-              mind connecting with me on LinkedIn or just having a chat.
-            </p>
+            <div className="mb-4 space-y-5 lg:mb-0">
+              <p className="text-base text-gray-700">
+                You probably went through 1000 resumes before you saw mine. Why not
+                spend 5 minutes getting to know me in person and see if I am the
+                one you are looking for? If not, that&rsquo;s okay. I hope you do not
+                mind connecting with me on LinkedIn or just having a chat.
+              </p>
+              <a
+                href="https://calendar.app.google/pBjdKnxL9y58W7y97"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-full bg-accents px-5 py-3 text-sm font-bold text-gray-700 shadow-md transition hover:-translate-y-0.5 hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2"
+              >
+                Schedule a chat with me
+              </a>
+            </div>
           </div>
           <p className="text-lg text-gray-700 font-bold lg:mt-auto">
             Build the product. Understand the people. Make YOUR PRODUCT better!
