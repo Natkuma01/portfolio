@@ -6,9 +6,47 @@ import Chatbot from "./Chatbot";
 
 const Intro = () => {
   const [chatOpen, setChatOpen] = useState(false);
+  const [isProjectPopupOpen, setIsProjectPopupOpen] = useState(true);
 
   return (
     <>
+    {isProjectPopupOpen && (
+      <div
+        className="fixed inset-0 z-[60] flex items-center justify-center bg-zinc-900/40 p-6"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="ml-project-title"
+      >
+        <div className="relative w-full max-w-md rounded-3xl border border-white/70 bg-[#fdf7f2] p-8 shadow-2xl">
+          <button
+            type="button"
+            onClick={() => setIsProjectPopupOpen(false)}
+            className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full text-xl text-zinc-600 transition hover:bg-[#f4dada] hover:text-zinc-900"
+            aria-label="Close project announcement"
+          >
+            x
+          </button>
+          <p className="mb-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#af4f52]">
+            New Project
+          </p>
+          <h2 id="ml-project-title" className="text-3xl font-extrabold text-zinc-700">
+            Hey I&rsquo;m working on a new ML project.
+            <span className="mt-4 block text-lg font-medium leading-relaxed text-zinc-600">
+              Take a look
+              {" "}
+              <a
+                href="https://github.com/Natkuma01/spaceship-titanic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#af4f52] underline decoration-2 underline-offset-4 transition hover:text-zinc-900"
+              >
+                here
+              </a>
+            </span>
+          </h2>
+        </div>
+      </div>
+    )}
     <div className="flex flex-col md:flex-row p-6 md:p-24">
       <div className="flex-1">
         <img

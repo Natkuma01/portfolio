@@ -1,53 +1,30 @@
-import React from "react";
 import introPic from "../../assets/Intro/introPic.jpg";
 
 const About = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row p-24">
-        <div className="flex-1">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 py-12 sm:px-10 lg:flex-row lg:items-stretch lg:gap-16 lg:px-16 lg:py-20">
+        <div className="flex w-full justify-center lg:w-5/12">
           <img
-            className="w-full max-h-[600px] origin-bottom -rotate-12 mx-auto rounded-3xl drop-shadow-2xl"
+            className="h-auto w-full max-w-xs rounded-3xl shadow-2xl sm:max-w-sm lg:max-w-md"
             src={introPic}
             alt="Natalie Chan"
           />
         </div>
-        <div className="flex-1 mt-16 lg:mt-0 lg:ml-16">
+        <div className="w-full lg:flex lg:flex-1 lg:flex-col">
           <p className="text-3xl text-gray-700 font-extrabold text-center mb-5">
             I build for people, not just for code.
           </p>
-          <p className="text-base text-gray-700 mb-4">
-            I&rsquo;m a new graduate software engineer building toward a career in
-            AI and machine learning. I develop full-stack applications, explore
-            ML through hands-on projects, and use AI tools thoughtfully to learn
-            faster, test ideas, and turn concepts into working products.
-          </p>
-          <p className="text-base text-gray-700 mb-4">
-            But technical skills are only part of what I bring.
-          </p>
-          <p className="text-base text-gray-700 mb-4">
-            Before becoming a software engineer, I worked in hospitality, where
-            understanding people was the job. I learned how to listen, explain
-            ideas clearly, earn trust, and recognize what someone might need
-            before they ask for it.
-          </p>
-          <p className="text-base text-gray-700 mb-4">
-            That mindset now shapes how I approach engineering.
-          </p>
-          <p className="text-base text-gray-700 mb-4">
-            I care about more than whether a feature works. I want to understand
-            why we are building it, who it is for, and whether it genuinely makes
-            someone&rsquo;s life easier. I enjoy collaborating with others,
-            talking with users, and translating their needs into practical
-            product ideas.
-          </p>
-          <p className="text-base text-gray-700 mb-4">
-            I&rsquo;m curious about how machines learn, excited about where AI is
-            heading, and looking for opportunities where I can continue growing
-            while contributing as a software engineer from day one.
-          </p>
-          <p className="text-lg text-gray-700 font-bold">
-            Build the product. Understand the people. Make both better.
+          <div className="lg:flex lg:flex-1 lg:items-center lg:-translate-y-8">
+            <p className="text-base text-gray-700 mb-4 lg:mb-0">
+              You probably went through 1000 resumes before you saw mine. Why not
+              spend 5 minutes getting to know me in person and see if I am the
+              one you are looking for? If not, that&rsquo;s okay. I hope you do not
+              mind connecting with me on LinkedIn or just having a chat.
+            </p>
+          </div>
+          <p className="text-lg text-gray-700 font-bold lg:mt-auto">
+            Build the product. Understand the people. Make YOUR PRODUCT better!
           </p>
         </div>
       </div>

@@ -10,9 +10,17 @@ import figma from "../../assets/project/figma.png";
 import stopwatch from "../../assets/project/stopwatch.png";
 import ProjectCard from "./ProjectCard";
 import wine from "../../assets/project/wine.png";
+import spaceshipTitanic from "../../assets/project/spaceship-titanic.png";
 
 const Projects = () => {
   const projectData = [
+    {
+      image: spaceshipTitanic,
+      title: "SpaceShip Titanic",
+      description: "A machine learning project that predicts which passengers were transported using feature engineering, data imputation, and model comparison.",
+      badges: ["Python", "scikit-learn", "Pandas", "Jupyter"],
+      link: "https://github.com/Natkuma01/spaceship-titanic",
+    },
     {
       image: wine,
       title: "Wine Inventory Tracker",
@@ -59,7 +67,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-primary h-[2000px]">
+    <div className="pb-16">
       <p className="text-gray-700 font-extrabold text-5xl flex justify-center mt-10">
         Projects
       </p>
