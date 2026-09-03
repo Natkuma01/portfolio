@@ -1,3 +1,14 @@
+export const kumaStarterAnswers = {
+  "Why is Natalie different?":
+    "Natalie brings a user-first mindset shaped by both software engineering and fine dining. Before returning to school, she worked at Jean-Georges, Nobu, and Zuma, where she learned to notice needs that people may not be able to put into words. She brings that same observation, care, and calm teamwork to building software.\n\nShe is also a real team-glue person: the kind of teammate who breaks the ice, helps people feel included, and follows through on what she commits to.",
+  "Tell me about her projects":
+    "Natalie built the Wine Inventory Tracker to help bar and restaurant owners manage wine inventory, calculate profit margins, and make smarter pricing decisions. It uses Django, PostgreSQL, React, and AWS.\n\nHer first ML project is Spaceship Titanic, a classification project where she focused on cleaning data, handling missing values carefully, engineering features, and comparing logistic regression and random forest models. It made her even more excited to understand how to choose and improve models.",
+  "What is she learning in AI/ML?":
+    "Natalie is building her ML foundation with Google courses and hands-on projects. She is learning pandas, NumPy, scikit-learn, data cleaning, model selection, and neural-network fundamentals.\n\nRight now, she is especially curious about how model choice works: which model suits which kind of data, how to improve accuracy, and how to build AI people can trust.",
+  "How can I contact Natalie?":
+    "You can reach Natalie at natkuma@outlook.com or nat.jebon@gmail.com. You can also find her on LinkedIn at linkedin.com/in/natalie-chan-shimin/ and GitHub at github.com/Natkuma01. She would be happy to set up a meeting.",
+};
+
 export const kumaKnowledge = `
 # KUMA'S KNOWLEDGE ABOUT NATALIE CHAN
 

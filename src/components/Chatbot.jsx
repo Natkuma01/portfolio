@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { kumaStarterAnswers } from "../data/bio";
 
 const starterQuestions = [
   "Why is Natalie different?",
@@ -35,6 +36,16 @@ const Chatbot = () => {
       { role: "user", text: trimmedQuestion },
     ]);
     setInput("");
+
+    const starterAnswer = kumaStarterAnswers[trimmedQuestion];
+    if (starterAnswer) {
+      setMessages((currentMessages) => [
+        ...currentMessages,
+        { role: "bot", text: starterAnswer },
+      ]);
+      return;
+    }
+
     setIsLoading(true);
 
     try {
