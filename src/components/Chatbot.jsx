@@ -13,9 +13,7 @@ const initialMessage = {
   text: "Hey, I am Kuma, Natalie's best friend. Want to know about her projects, her path into AI, or what makes her a great teammate? Ask away.",
 };
 
-const CHAT_API_URL =
-  import.meta.env.VITE_CHAT_API_URL ||
-  "https://portfolio-h4jcv7pxn4-2644s-projects.vercel.app/api/chat";
+const CHAT_API_URL = import.meta.env.VITE_CHAT_API_URL || "/api/chat";
 
 const Chatbot = () => {
   const [input, setInput] = useState("");
