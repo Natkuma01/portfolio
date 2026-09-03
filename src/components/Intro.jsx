@@ -55,8 +55,8 @@ const Intro = () => {
       {chatOpen && <Chatbot />}
       <button
         onClick={() => setChatOpen((prev) => !prev)}
-        className="bg-pink-500 hover:bg-pink-600 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-colors"
-        aria-label="Toggle chat"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#d9664f] text-white shadow-lg transition-colors hover:bg-[#bd503e]"
+        aria-label={chatOpen ? "Close Kuma chat" : "Open Kuma chat"}
       >
         {chatOpen ? (
           <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
